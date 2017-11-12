@@ -1,0 +1,152 @@
+<!--
+
+	Name: TR-LAB PEP PROPERTY INTERACTIVE - HORIZONTAL BAR CHARTS
+    End Use: ODI CONFERENCE NOV 1 2016
+	Developer: J BAYLISS
+	From/to: Oct 12 2016 to ... 
+	Technologies: D3.js, Javascript.js, D3.js, Chosen.js, Bootstrap.js, Less.js
+--> 
+
+
+<!DOCTYPE html>
+
+	<html lang="en">
+
+		<head>
+	    	
+	    	<meta charset="utf-8">
+
+	    	<title>Transparency of overseas companies owning property in Greater London</title>
+
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <link rel="stylesheet" href="css/styles.css" media="screen">
+		    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css">
+		    <link rel="stylesheet" href="css/chosen.css">
+  			<link rel="stylesheet" href="css/styles.css">
+		    <link rel="stylesheet" href="css/bootstrap-3.3.6.css">
+			<link rel="stylesheet" href="css/knowledge.css">
+            	    
+		    <style>
+				html{
+					background-color:black;
+				}
+				
+				
+				.container-fluid{
+					background-color:black;
+				}
+			
+				body {
+					font-family: Knowledge, Arial, Sans-serif;
+					color: black;
+				}
+				
+				#interactive {
+					width:100%;	
+				}
+				
+				#heading {
+					background-color:/*#FAFAFA*/black;
+					padding-top:0px;
+					padding-bottom:0px;
+				}
+				
+				#title{
+					color: white;
+					margin-top:25px;
+					margin-bottom:0px;
+				}
+				
+				#subtitle{
+					font-size:2.5em;
+					color: white;
+					margin-bottom:0px;
+				}
+							
+			</style>
+
+		    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		    <!--[if lt IE 9]>
+		      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+		      <script src="../bower_components/respond/dest/respond.min.js"></script>
+		    <![endif]-->
+
+		</head>
+	  	
+	  	<body>
+
+	      	<div class="container-fluid"> 
+	  		
+	  			<div class="jumbotron" id="heading">         
+
+					<div class="row" id="banner">	                
+				
+						<div class="col-sm-12 col-xs-12" id="image">
+							<!-- <img src="./images/fallback.png" alt="TR lab" width="100%"> -->
+						</div>            
+					
+					</div> 
+
+					<div class="row" id="heading">
+
+	          			<div class="col-sm-12 col-xs-12">
+	            			<h2 id="title">Thomson Reuters Labs</h2>
+	            				<p id="subtitle" class="lead">Transparency of overseas companies owning property in Greater London</p>
+	          			</div>
+	        
+	        		</div>
+	     		
+	     		</div>
+	      
+	      	<!--</div>
+	      
+	    	<div class="container">-->
+
+	   			<div class="row" id="embedrow">
+	  			
+	  				<div class="col-sm-offset-6 col-sm-6 col-xs-12">
+		    		</div>
+
+	    		</div>     
+	   
+		  		<div class="row">
+		           
+		        	<div class="col-sm-12 col-xs-12"> 
+		             
+		            	<div id="example-1">
+		            	</div>
+		              
+					</div>
+				
+				</div><!-- end row --> 
+	                
+	        </div> <!--end container-->
+
+
+			<script src="js/jquery-v1.12.4.js"></script> 
+			<script src="js/bootstrap-3.3.6.js"></script>
+		 	<script src="js/modernizr.custom.56904.js"></script>
+			<script src="js/d3.v3.5.17.js" type='text/javascript'></script>
+		    <script src="js/pym.js" charset="utf-8"></script>
+		    
+		    <script>
+
+				$(document).ready(function () {
+					
+					var childURL = "project.html";
+					
+					var firstbit = window.location.href.split("index.html")[0];
+				
+				
+					d3.select("#inputType").attr("value",'<iframe width=960 height=700 src="' + firstbit + childURL + '" scrolling=no frameborder=0/>');
+					
+					//add pym chart
+					var pymParent = new pym.Parent('example-1', childURL);
+
+				});
+		
+		    </script>
+
+		</body>
+
+	</html>

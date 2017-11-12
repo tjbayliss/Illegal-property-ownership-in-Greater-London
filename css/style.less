@@ -1,0 +1,47 @@
+
+/* START Variable declarations */
+
+	@tr_orange_light : #ff8000;
+	@tr_orange_dark : #c60;
+
+	@tr_grey_dark : #555;
+	@tr_grey_light : #e9e9e9;
+
+
+	@tr_blue_light : #0099c4;
+	@tr_blue_dark : #0072a8;
+
+/* END Variable declarations */
+
+
+
+
+
+#title {
+	color : @tr_grey_dark;
+}
+
+
+.footerText{
+	color : @tr_orange_light;
+}
+
+
+a {
+	font-size : 0.8em;
+	font-weight : 700;
+	color : @tr_blue_light;
+
+	&:hover {
+		color : @tr_blue_dark;
+		text-decoration: underline;
+		font-weight : 700;
+	}
+	&:active {
+		color : @tr_blue_dark;
+		font-weight : 700;
+	}
+	&:visited {
+		color : #0099c4;
+	}
+}

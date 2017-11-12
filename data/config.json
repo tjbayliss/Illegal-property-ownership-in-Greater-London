@@ -1,0 +1,47 @@
+{
+    "vars" : { 
+            "margin_sm": [35, 50, 0, 50],
+            "margin_md": [70, 15, 0, 10],
+            "margin_lg": [70, 10, 0, 50],
+            "aspectRatio_sm" : [1,0.5],
+            "aspectRatio_md" : [1,1],
+            "aspectRatio_lg" : [1,1],
+            "mobileBreakpoint" : 610, 
+            "graphic_data_url": [ "data0", "data1" ],
+            "singleColour":[ "#A00000" , "#DC0A0A" , "#FF5900" , "#FFA100" ],
+            "panels":[ "graphic0" , "graphic1" , "graphic2" , "graphic3"  ],
+            "scaled":false,
+            "scaledUpperLimit":7,
+            "axisLimits":[ "Fixed" , "Data" ],
+            "xAxisScaleDivisor":10,
+            "yAxisScaleDivisor":10,
+            "xaxislabelPrecison":0.1,
+            "yaxislabelPrecison":0.1,
+            "GraphsPerRow":5,
+            "dependentVarMean":6.6,
+            "showLabels":true,
+            "xRoundedAxisLimits":[10,10,10,10],
+            "yRoundedAxisLimits":[10,10,10,10],
+            "x_num_ticks_sm_md_lg" : [5,5,5,5],
+            "y_num_ticks_sm_md_lg" : [5,5,5,5],
+            "fields":[ "graphic0" , "graphic1" , "graphic2" , "graphic3"  ],
+            "xAxisLabels":[ "Count" , "Count" , "Count" , "Count"   ],
+            "yAxisLabel":"Local Authority District",
+            "scatterTitles":[ "Known" , "Known" , "Known" , "Unknown" ],
+			"scatterSubTitles":[ "Matched (not on World-Check)" ,"Others (found on World-Check)" , "PEP (found on World-Check)" , "" ],
+			"backgroundTitle":"Project background",			
+			"company_destinations":[ "http://thomsonreuters.com/en.html" , "http://www.transparency.org/" ],
+			"companies":[ "Thomson Reuters" , "Transparency International" ],
+			"datasources_destinations":[ "http://api.opencorporates.com/" , "https://offshoreleaks.icij.org/" , "https://www.gov.uk/guidance/land-registry-overseas-companies-data"  ],
+			"datasources":[ "OpenCorporates" , "ICIJ’s Offshore Leaks Database" , "The Land Registry Overseas companies data" ],
+			"datasources2":[ "Contains OS data © Crown copyright and database right 2016." ],
+			"datasources_destinations2":[ "https://www.ons.gov.uk/" ],
+			
+			"addinfo": [
+						"Companies, and hence land or property, the owners of which are matched to an entity in either of the used datasets (ICIJ’s Offshore Leaks data, Thomson Reuters Open PermID data, and Open Corporates data), and are linked to World Check entities flagged as PEPs.",
+						"Companies, and hence land or property, the owners of which are matched to an entity in either of the used datasets (ICIJ’s Offshore Leaks data, Thomson Reuters Open PermID data, and Open Corporates data),  and are linked to World Check entities flagged with non-PEP labels (e.g.: Terrorism, Crime, etc.)",
+						"Companies, and hence land or property, the owners of which are matched to an entity in either of the used datasets (ICIJ’s Offshore Leaks data, Thomson Reuters Open PermID data, and Open Corporates data), but are not linked to any World Check entity.",
+						"Unknowns in our dataset represent land or property in London, the owners of which we were unable to find any information on by using our three main matching datasets (ICIJ’s Offshore Leaks data, Thomson Reuters Open PermID data, and Open Corporates data)."
+					 ] 
+	} 
+}
